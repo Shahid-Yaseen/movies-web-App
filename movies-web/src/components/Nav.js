@@ -23,7 +23,7 @@ export function Nav({query,setQuery,setSearched,login,setLogin}) {
         <div className="bar"></div>
         <div className="bar"></div>
       </div>
-      <ul className={`font-bold text-xl nav-list gap-2 mq:flex lg:bg-transparent ssm:bg-white/30 ${isNavOpen ? 'open' : ''}`}>
+      <ul className={`font-bold text-xl nav-list gap-2 mq:flex lg:bg-transparent ssm:bg-black/90 ${isNavOpen ? 'open' : ''}`}>
       <li className='lg:hidden block'>
         {searchOpen ? <form onSubmit={(e) => {
           e.preventDefault();
@@ -35,7 +35,7 @@ export function Nav({query,setQuery,setSearched,login,setLogin}) {
             q = e.target.value;
           }}></input>
         </form> : <div className="mt-3 flex justify-center">
-          <svg onClick={() => toggleSearch()}  xmlns="http://www.w3.org/2000/svg" fill="blue" viewBox="0 0 24 24" strokeWidth={1.5} stroke="white "  className=" w-6 h-6 cursor-pointer">
+          <svg onClick={() => toggleSearch()}  xmlns="http://www.w3.org/2000/svg" fill="black" viewBox="0 0 24 24" strokeWidth={2} stroke="white "  className=" w-6 h-6 cursor-pointer">
             <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
           </svg></div>}
         </li>
